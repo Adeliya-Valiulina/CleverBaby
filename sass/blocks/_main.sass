@@ -1,0 +1,51 @@
+.main
+  background-image: url(../img/main.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 37px
+    left: 64px
+    width: 106px
+    height: 84px
+    background-image: url(../img/car.svg)
+    background-repeat: no-repeat
+  &::after
+    content: ''
+    position: absolute
+    top: 65px
+    right: 83px
+    width: 91px
+    height: 62px
+    background-image: url(../img/cloud.svg)
+    background-repeat: no-repeat
+  &-offer
+    padding: 140px 0
+    max-width: 375px
+  &__title
+    font-family: 'Rubik'
+    font-style: normal
+    font-weight: 500
+    font-size: 42px
+    line-height: 140%
+    margin: 0
+    margin-bottom: 15px
+  &__subtitle
+    font-family: 'Rubik'
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 140%
+    margin-bottom: 30px
+  &__text
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 140%
+    margin: 0
+    margin-bottom: 63px
+  &__button
+    background-color: $primary
