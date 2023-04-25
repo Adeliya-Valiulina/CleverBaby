@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 970px;
+  max-width: 931px;
   margin: auto;
 }
 .container .button {
@@ -342,6 +342,7 @@ template {
 }
 .header__logo {
   margin-right: 60px;
+  height: 23px;
 }
 .header-menu {
   margin: 0;
@@ -362,6 +363,25 @@ template {
   font-size: 16px;
   line-height: 140%;
   color: #122659;
+  position: relative;
+}
+.header-menu__link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #FEB9CC;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+.header-menu__link:hover {
+  color: #FEB9CC;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+.header-menu__link:hover::after {
+  width: 100%;
 }
 .header__contacts {
   display: flex;
@@ -370,11 +390,13 @@ template {
 .header__contacts-phone {
   margin-right: 10px;
 }
-.header__contacts-number {
+.header__number {
+  text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 140%;
+  color: #122659;
 }
 
 .main {
@@ -435,4 +457,146 @@ template {
 }
 .main__button {
   background-color: #FFD787;
+}
+.main__button:hover {
+  background-color: #FFBE3B;
+  transition: 0.2s ease;
+}
+
+.training {
+  padding: 130px 0;
+  position: relative;
+}
+.training::before {
+  content: "";
+  position: absolute;
+  top: 270px;
+  left: 120px;
+  width: 105px;
+  height: 115px;
+  background-image: url(../img/girl.svg);
+  background-repeat: no-repeat;
+}
+.training::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  right: 211px;
+  width: 135px;
+  height: 68px;
+  background-image: url(../img/rocket.svg);
+  background-repeat: no-repeat;
+}
+.training__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+}
+.training-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.training__block {
+  width: 414px;
+}
+.training__block__right {
+  width: 435px;
+}
+.training__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
+  margin-bottom: 28px;
+}
+.training__subtitle__mb {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
+  margin-bottom: 35px;
+}
+.training__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  margin: 0;
+}
+.training__video {
+  position: relative;
+}
+.training__video__pulse-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  border: none;
+  border-radius: 50%;
+  background-color: #F4C752;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-position: top 13px left 17px;
+  cursor: pointer;
+}
+.training__video__pulse-button__rings {
+  border: 1px solid #FFD787;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+  animation-duration: 2s;
+  animation-name: pulse_1;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+.training__video__pulse-button .pulse-button__rings:nth-child(2) {
+  animation-name: pulse_2;
+}
+.training__video__pulse-button .pulse-button__rings:nth-child(3) {
+  animation-name: pulse_3;
+}
+@keyframes pulse_1 {
+  from {
+    opacity: 1;
+    transform: scale(0.9, 0.9);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.3, 1.3);
+  }
+}
+@keyframes pulse_2 {
+  from {
+    opacity: 1;
+    transform: scale(0.8, 0.8);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.5, 1.5);
+  }
+}
+@keyframes pulse_3 {
+  from {
+    opacity: 1;
+    transform: scale(0.8, 0.8);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.7, 1.7);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CleverBaby-Английский язык</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Rubik:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CleverBaby-Английский язык</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
       <div class="header-wrapper">
         <a href="#" class="header__logo">
-          <img src="img/logo.svg" alt="logo:CleverBaby" class="logo">
+          <img src="img/logo.svg" alt="logo:CleverBaby" class="logo" />
         </a>
         <ul class="header-menu">
           <li class="header-menu__item">
@@ -32,24 +35,75 @@
           </li>
         </ul>
         <div class="header__contacts">
-          <img src="img/phone.svg" alt="icon:phone" class="header__contacts-phone">
-          <span class="header__contacts-number">+ 7 (495) 983-47-19</span>
+          <a href="tel:+ 7 (495) 983-47-19" class="header__number">
+            <img
+              src="img/phone.svg"
+              alt="Icon:phone"
+              class="header__contacts-phone"
+            />
+            <span class="header__contacts-number">+ 7 (495) 983-47-19</span>
+          </a>
         </div>
         <!-- /.header__contacts -->
       </div>
       <!-- /.header__wrapper -->
-  </header>
-  <section class="main">
-    <div class="container">
-      <div class="main-offer">
-        <h1 class="main__title">Английский язык</h1>
-        <h2 class="main__subtitle">для детей от 2 до 7 лет</h2>
-        <p class="main__text">Гармоничное развитие детей и обучение
-          через полное погружение в языковую среду</p>
-        <button class="button main__button">Записаться</button>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="main-offer">
+          <h1 class="main__title">Английский язык</h1>
+          <h3 class="main__subtitle">для детей от 2 до 7 лет</h3>
+          <p class="main__text">
+            Гармоничное развитие детей и обучение через полное погружение в
+            языковую среду
+          </p>
+          <button class="button main__button">Записаться</button>
+        </div>
+        <!-- /.main-offer -->
       </div>
-      <!-- /.main-offer -->
-    </div>
-  </section>
-</body>
+    </section>
+    <section class="training">
+      <div class="container">
+        <h2 class="training__title">Как проходит обучение</h2>
+        <div class="training-wrapper">
+          <div class="training__block">
+            <div class="training__text">
+              <h3 class="training__subtitle">
+                Играя — обучаем, обучая — развиваем
+              </h3>
+              <p class="training__description">
+                Мы взяли все самое лучшее из традиционных и&nbsp;современных
+                методик обучения и развития детей. Обучение английскому языку
+                происходит легко и интересно, ведь малыши не зубрят материал по
+                учебникам, а познают его через игру, сказки, книги и музыку.
+              </p>
+              <br />
+              <p class="training__description">
+                Наша методика также включает в себя обучение по программе
+                Cambridge. Благодаря этому, наши ученики без труда сдают
+                международные и государственные экзамены.
+              </p>
+            </div>
+          </div>
+          <!-- /.training__block -->
+          <div class="training__block__right">
+            <h3 class="training__subtitle__mb">
+              Посмотрите, как проходят наши занятия
+            </h3>
+            <div class="training__video">
+              <img src="img/video.jpg" alt="" class="training__img" />
+              <button class="training__video__pulse-button">
+                <span class="training__video__pulse-button__rings"></span>
+                <span class="training__video__pulse-button__rings"></span>
+                <span class="training__video__pulse-button__rings"></span>
+              </button>
+            </div>
+            <!-- /.training__video -->
+          </div>
+          <!-- /.training__block__right -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+  </body>
 </html>
