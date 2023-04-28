@@ -1,6 +1,7 @@
 .training
   padding: 130px 0
   position: relative
+  margin-bottom: 130px
   &::before
     content: ''
     position: absolute
@@ -19,6 +20,9 @@
     height: 68px
     background-image: url(../img/rocket.svg)
     background-repeat: no-repeat
+  &-wrapper
+    display: flex
+    flex-wrap: wrap
   &__title
     font-family: 'Rubik'
     font-style: normal
@@ -42,6 +46,14 @@
     line-height: 140%
     margin: 0
     margin-bottom: 28px
+    &-bottom
+      font-style: normal
+      font-weight: 500
+      font-size: 20px
+      line-height: 140%
+      margin: 0
+      margin-bottom: 20px
+      min-width: 322px
     &__mb
       font-style: normal
       font-weight: 500
@@ -55,8 +67,22 @@
     font-size: 16px
     line-height: 145%
     margin: 0
+    &-bottom
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 145%
+      margin: 0
+      max-width: 249px
+      &-w300
+        max-width: 304px
+        margin: 0
+  &__img
+    filter: brightness(70%)
   &__video
     position: relative
+    border-radius: 12px
+    overflow: hidden
     &__pulse-button
       position: absolute
       left: 50%
@@ -73,7 +99,7 @@
       background-position: top 13px left 17px
       cursor: pointer
       &__rings
-        border: 1px solid $primary
+        border: 1px solid #F4C752
         position: absolute
         top: 0
         left: 0
@@ -116,3 +142,60 @@
         to
           opacity: 0
           transform: scale(1.7, 1.7)
+  &__bottom
+    display: flex
+    margin-top: 152px
+
+    &__left
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      transform: translateY(55px)
+      &::before
+        content: ''
+        position: absolute
+        top: 130px
+        left: 190px
+        width: 140px
+        height: 126px
+        background-image: url(../img/2a.svg)
+        background-repeat: no-repeat
+    &__right
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      transform: translateY(10px)
+      &::after
+        content: ''
+        position: absolute
+        top: 370px
+        right: 310px
+        width: 144px
+        height: 60px
+        background-image: url(../img/4a.svg)
+        background-repeat: no-repeat
+  &__image
+    &__bottom
+      margin: 0
+      margin-right: 30px
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: -19px
+        left: -102px
+        width: 182px
+        height: 61px
+        background-image: url(../img/1a.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        position: absolute
+        top: 130px
+        right: -127px
+        width: 148px
+        height: 126px
+        background-image: url(../img/3a.svg)
+        background-repeat: no-repeat
+
+
