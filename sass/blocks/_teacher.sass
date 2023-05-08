@@ -1,0 +1,86 @@
+.teacher
+  position: relative
+  padding: 120px 0
+  &::before
+    content: ''
+    position: absolute
+    top: 450px
+    left: 64px
+    width: 44px
+    height: 132px
+    background-image: url(../img/pencil.svg)
+    background-repeat: no-repeat
+  &::after
+    content: ''
+    position: absolute
+    top: 130px
+    right: 140px
+    width: 58px
+    height: 97px
+    background-image: url(../img/house.svg)
+    background-repeat: no-repeat
+  &-wrapper
+    display: flex
+    align-items: center
+  &-top
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 60px
+  &__title
+    font-style: normal
+    font-weight: 500
+    font-size: 36px
+    line-height: 140%
+  &__text
+    width: 350px
+.swiper
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  &-wrapper
+    margin-bottom: 50px
+  &-slide
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 220px
+    &__avatar
+      margin-bottom: 20px
+      width: 220px
+      height: 220px
+      object-fit: cover
+      border-radius: 12px
+    &__name
+      font-style: normal
+      font-weight: 500
+      font-size: 20px
+      line-height: 140%
+      margin-bottom: 15px
+    &__country
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 145%
+      color: #677085
+  &-button
+    z-index: 99
+    width: 30px
+    height: 20px
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-color: transparent
+    &--next
+      right: 18px
+      background-image: url(../img/arrow-right.svg)
+    &--prev
+      left: 18px
+      background-image: url(../img/arrow-left.svg)

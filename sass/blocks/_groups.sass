@@ -1,8 +1,19 @@
-.groups
+.group
   background-image: url(../img/back-group.jpg)
   background-repeat: no-repeat
   background-size: cover
+  background-position: left -3px
   padding: 170px 0 197px 0
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 101px
+    left: 206px
+    width: 56px
+    height: 58px
+    background-image: url(../img/star.svg)
+    background-repeat: no-repeat
   &-top
     display: flex
     align-items: start
@@ -56,7 +67,7 @@
     &__3
       background-color: #FEB9CC
       &:hover
-        background-color: #E08DA4
+        background-color: #FD93B0
         transition: .2s ease
 b, strong
   font-weight: 500
