@@ -23,6 +23,7 @@ body .button {
   font-size: 16px;
   line-height: 140%;
   border: none;
+  max-width: 166px;
 }
 
 h1, h2 {
@@ -31,6 +32,10 @@ h1, h2 {
 }
 
 h3 {
+  margin: 0;
+}
+
+p {
   margin: 0;
 }
 
@@ -473,7 +478,7 @@ template {
   background-color: #FFD787;
 }
 .main__button:hover {
-  background-color: #FFBE3B;
+  background-color: #FFC551;
   transition: 0.2s ease;
 }
 
@@ -788,7 +793,7 @@ template {
   background-color: #FFD787;
 }
 .group__button__2:hover {
-  background-color: #FFBE3B;
+  background-color: #FFC551;
   transition: 0.2s ease;
 }
 .group__button__3 {
@@ -907,4 +912,65 @@ b, strong {
 .swiper-button--prev {
   left: 18px;
   background-image: url(../img/arrow-left.svg);
+}
+
+.banner {
+  background-image: url(../img/back-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 130px;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 225px;
+  width: 155px;
+  height: 130px;
+  background-image: url(../img/rainbow.svg);
+  background-repeat: no-repeat;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 160px;
+  right: 320px;
+  width: 118px;
+  height: 133px;
+  background-image: url(../img/boy.svg);
+  background-repeat: no-repeat;
+}
+.banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+.banner__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 125%;
+  color: #FEFCFA;
+  max-width: 490px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.banner__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  color: #FEFCFA;
+  max-width: 360px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.banner__button {
+  background-color: #FFD787;
+}
+.banner__button:hover {
+  background-color: #FFC551;
+  transition: 0.2s ease;
 }/*# sourceMappingURL=style.css.map */
