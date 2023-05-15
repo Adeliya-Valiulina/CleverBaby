@@ -6,12 +6,13 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #122659;
 }
-body .trainings {
+body .training-wrapper,
+body .advantage-wrapper {
   max-width: 931px;
   margin: auto;
 }
 body .container {
-  max-width: 970px;
+  width: 970px;
   margin: auto;
 }
 body .button {
@@ -485,7 +486,6 @@ template {
 .training {
   padding: 130px 0;
   position: relative;
-  margin-bottom: 130px;
 }
 .training::before {
   content: "";
@@ -509,7 +509,10 @@ template {
 }
 .training-wrapper {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: auto;
 }
 .training__title {
   font-family: "Rubik";
@@ -520,10 +523,6 @@ template {
   text-align: center;
   margin: 0;
   margin-bottom: 80px;
-}
-.training-wrapper {
-  display: flex;
-  justify-content: space-between;
 }
 .training__block {
   width: 414px;
@@ -539,15 +538,6 @@ template {
   margin: 0;
   margin-bottom: 28px;
 }
-.training__subtitle-bottom {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
-  margin: 0;
-  margin-bottom: 20px;
-  min-width: 322px;
-}
 .training__subtitle__mb {
   font-style: normal;
   font-weight: 500;
@@ -562,21 +552,6 @@ template {
   font-size: 16px;
   line-height: 145%;
   margin: 0;
-}
-.training__description-bottom {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 145%;
-  margin: 0;
-  max-width: 249px;
-}
-.training__description-bottom-w300 {
-  max-width: 304px;
-  margin: 0;
-}
-.training__img {
-  filter: brightness(70%);
 }
 .training__video {
   position: relative;
@@ -652,48 +627,83 @@ template {
     transform: scale(1.7, 1.7);
   }
 }
-.training__bottom {
-  display: flex;
-  margin-top: 152px;
+.training__video__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.training__bottom__left {
+
+.advantage {
+  margin-bottom: 150px;
+}
+.advantage-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.advantage__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
+  margin-bottom: 10px;
+  max-width: 322px;
+}
+.advantage__left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transform: translateY(55px);
+  height: 450px;
+  padding: 75px 0 0 0;
+  position: relative;
 }
-.training__bottom__left::before {
+.advantage__left::before {
   content: "";
   position: absolute;
-  top: 130px;
-  left: 190px;
+  top: 212px;
+  left: 205px;
   width: 140px;
   height: 126px;
   background-image: url(../img/2a.svg);
   background-repeat: no-repeat;
 }
-.training__bottom__right {
+.advantage__right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transform: translateY(10px);
+  position: relative;
+  height: 390px;
 }
-.training__bottom__right::after {
+.advantage__right::after {
   content: "";
   position: absolute;
-  top: 370px;
-  right: 310px;
+  top: 380px;
+  right: 222px;
   width: 144px;
   height: 60px;
   background-image: url(../img/4a.svg);
   background-repeat: no-repeat;
 }
-.training__image__bottom {
+.advantage__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
   margin: 0;
-  margin-right: 30px;
+  max-width: 249px;
+}
+.advantage__description-w300 {
+  max-width: 304px;
+  margin: 0;
+}
+.advantage__image {
+  margin: auto;
   position: relative;
 }
-.training__image__bottom::before {
+.advantage__image::before {
   content: "";
   position: absolute;
   top: -19px;
@@ -703,7 +713,7 @@ template {
   background-image: url(../img/1a.svg);
   background-repeat: no-repeat;
 }
-.training__image__bottom::after {
+.advantage__image::after {
   content: "";
   position: absolute;
   top: 130px;
@@ -712,6 +722,11 @@ template {
   height: 126px;
   background-image: url(../img/3a.svg);
   background-repeat: no-repeat;
+}
+
+.bottom-img {
+  width: 100%;
+  height: 100%;
 }
 
 .group {
@@ -1068,4 +1083,24 @@ b, strong {
 .footer__link {
   text-decoration: none;
   color: #122659;
+}
+
+@media (max-width: 1200px) {
+  .container,
+  .header-wrapper {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container,
+  .header-wrapper,
+  .training-wrapper {
+    max-width: 678px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 678px;
+    width: 92%;
+  }
 }/*# sourceMappingURL=style.css.map */
