@@ -1,14 +1,337 @@
 @media (max-width: 1200px)
   .container,
-  .header-wrapper
+  .header-wrapper,
+  .training-wrapper,
+  .advantage-wrapper
     max-width: 960px
+  .main
+    &::after
+      display: none
+  .training
+    &::before
+      display: none
+  .banner
+    &::before
+      content: ''
+      position: absolute
+      top: 202px
+      left: 60px
+      width: 155px
+      height: 130px
+      background-image: url(../img/rainbow.svg)
+      background-repeat: no-repeat
+    &::after
+      content: ''
+      position: absolute
+      top: 194px
+      right: 85px
+      width: 118px
+      height: 133px
+      background-image: url(../img/boy.svg)
+      background-repeat: no-repeat
+  .teacher
+    &::before,
+    &::after
+      display: none
 @media (max-width: 992px)
   .container,
   .header-wrapper,
-  .training-wrapper
-    max-width: 678px
+  .training-wrapper,
+  .advantage-wrapper
+    max-width: 700px
+  .main
+    &::before
+      content: ''
+      position: absolute
+      top: 37px
+      left: 64px
+      width: 58px
+      height: 46px
+      background-image: url(../img/car-min.svg)
+      background-repeat: no-repeat
+  .training
+    &::after
+      content: ''
+      position: absolute
+      top: 120px
+      right: 46px
+      width: 101px
+      height: 50px
+      background-image: url(../img/rocket-min.svg)
+      background-repeat: no-repeat
+    &__block
+      max-width: 290px
+      &__right
+        max-width: 354px
+    &__subtitle
+      max-width: 198px
+      font-size: 18px
+      &__mb
+        font-size: 18px
+    &__description
+      font-size: 14px
+    &__video
+      width: 354px
+      height: 270px
+      &__img
+        height: 100%
+  .advantage
+    &__left
+      padding: 90px 0 0 0
+      &::before
+        content: ''
+        position: absolute
+        top: 232px
+        left: 165px
+        width: 140px
+        height: 126px
+        background-image: url(../img/2s.svg)
+        background-repeat: no-repeat
+    &__right
+      height: 290px
+      &::after
+        content: ''
+        position: absolute
+        top: 287px
+        right: 195px
+        width: 109px
+        height: 37px
+        background-image: url(../img/4s.svg)
+        background-repeat: no-repeat
+    &__block
+      max-width: 250px
+    &-img
+      width: 225px
+      height: 257px
+    &__subtitle
+      font-size: 18px
+      min-width: 215px
+    &__description
+      font-size: 14px
+      max-width: 215px
+      &-w300
+        font-size: 14px
+    &__image
+      &::before
+        content: ''
+        position: absolute
+        top: -35px
+        left: -68px
+        width: 140px
+        height: 46px
+        background-image: url(../img/1s.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        position: absolute
+        top: 85px
+        right: -60px
+        width: 64px
+        height: 58px
+        background-image: url(../img/3s.svg)
+        background-repeat: no-repeat
+  .group
+    padding: 110px 0
+    &::before
+      content: ''
+      position: absolute
+      top: 60px
+      left: 100px
+      width: 40px
+      height: 40px
+      background-image: url(../img/star-m.svg)
+      background-repeat: no-repeat
+    &__text
+      font-size: 14px
+      width: 261px
+    &-wrapper
+    &__card
+      padding: 45px 35px
+
+    &__description
+      margin-bottom: 15px
+    &__button
+      padding: 16px 28px !important
+  .swiper
+    &-slide
+      display: flex
+      flex-wrap: wrap
+      &__profile
+        min-width: 335px
+        margin-bottom: 30px
+      &__avatar
+        min-width: 335px
+  .teacher
+    &::before
+      display: none
+    &::after
+      display: none
+  .banner
+    &::before
+      content: ''
+      position: absolute
+      top: 202px
+      left: 35px
+      width: 155px
+      height: 130px
+      background-image: url(../img/rainbow.svg)
+      background-repeat: no-repeat
+    &::after
+      content: ''
+      position: absolute
+      top: 194px
+      right: 85px
+      width: 118px
+      height: 133px
+      background-image: url(../img/boy.svg)
+      background-repeat: no-repeat
 
 @media (max-width: 768px)
-  .container
-    max-width: 678px
+  .container,
+  .header-wrapper,
+  .training-wrapper,
+  .advantage-wrapper,
+  .advantages-mobile,
+  .groups-row
+    max-width: 567px
     width: 92%
+  .main
+    background-image: url(../img/main-photo.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    position: relative
+  .swiper
+    &-slide
+      &__profile
+        min-width: 250px
+      &__avatar
+        min-width: 250px
+  .training
+    padding: 60px 0
+    &-wrapper
+      display: flex
+      flex-direction: column
+    &__block
+      min-width: 100%
+      margin-bottom: 35px
+      &__right
+        min-width: 100%
+    &__video
+      min-width: 100%
+      height: 262px
+      &__img
+        height: 120%
+  .advantage
+    margin-bottom: 60px
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      margin: auto
+    &__left
+      width: 100%
+      display: flex
+      justify-content: space-between
+      flex-direction: row
+      height: 0%
+      &::before
+        display: none
+    &__right
+      width: 100%
+      display: flex
+      justify-content: space-between
+      flex-direction: row
+      height: 0%
+      margin-top: 30px
+      &::after
+        display: none
+    &__block
+      min-width: 255px
+      margin-bottom: 30px
+    &__subtitle
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 140%
+    &__description
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 145%
+    &__image
+      margin: auto
+      &::before
+        display: none
+      &::after
+        display: none
+    &-img
+      width: 300px
+      height: 350px
+  .group
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      width: 100%
+      margin-bottom: 30px
+      &:last-child
+        margin: 0
+      &:hover
+        display: none
+  .teacher
+    &-top
+      flex-direction: column
+      align-items: start
+      margin-bottom: 50px
+    &__title
+      margin-bottom: 30px
+  .banner
+    &::before,
+    &::after
+      display: none
+    &__text
+      font-size: 14px
+      max-width: 320px
+  .address
+    display: flex
+    flex-direction: column-reverse
+    background-color: #F7FAFC
+  
+    &-wrapper
+      position: static
+      box-shadow: none
+      padding: 80px 0
+      min-width: 100%
+    &-contacts
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      margin: 0
+      &__item
+        max-width: 273px
+        &__email
+          width: 210px
+        &__mob
+          width: 100%
+    .map
+      height: 450px
+    iframe
+      height: 450px
+  .footer
+    &-wrapper
+      flex-wrap: wrap
+    &-content
+      width: 100%
+      margin-bottom: 20px
+      
+@media (max-width: 567px)
+  .container,
+  .header-wrapper,
+  .training-wrapper,
+  .advantage-wrapper,
+  .advantages-mobile
+    max-width: 92%
+  .training
+    &__block
+      width: 100%
