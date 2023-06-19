@@ -6,9 +6,14 @@
     width: 1170px
     margin: auto
     padding: 40px 0
+    &__menu-button
+      display: none
   &__logo
     margin-right: 60px
-    height: 23px
+    height: 20px
+    z-index: 101
+    &_burger
+      display: none
   &-menu
     margin: 0
     padding: 0
@@ -17,6 +22,8 @@
     justify-content: space-between
     min-width: 507px
     margin-right: auto
+    background-color: #fff
+
     &__item
       list-style-type: none
     &__link
@@ -49,6 +56,8 @@
       margin-right: 10px
       width: 15px
       height: 15px
+    &_mobile
+      display: none
   &__number
     text-decoration: none
     font-style: normal
@@ -56,3 +65,54 @@
     font-size: 18px
     line-height: 140%
     color: $text-color
+  .burger
+    display: none
+    position: relative
+    width: 25px
+    height: 14px
+    padding: 0
+    align-items: center
+    z-index: 99
+    border: none
+    background-color: #fff
+    cursor: pointer
+    margin-right: 25px
+    &::before
+      content: ''
+      position: absolute
+      width: 23.4px
+      border: 1px solid #122659
+      transition: all 0.3s ease 0s
+      top: 0
+    &__line
+      width: 25px
+      border: 1px solid #122659
+      transform: scale(1)
+    &::after
+      content: ''
+      position: absolute
+      width: 23.4px
+      border: 1px solid #122659
+      transition: all 0.3s ease 0s
+      bottom: 0
+    @keyframes burgerAnimation
+      from
+        opacity: 0
+      to 
+        opacity: 3
+  .burger.active span
+    transform: scale(0)
+  .burger.active
+    &::before
+      top: 50%
+      transform: rotate(-45deg) translate(0, -50%)
+      background-color: #122659
+  .burger.active
+    &::after
+      bottom: 50%
+      transform: rotate(45deg) translate(0, 50%)
+      background-color: #122659
+
+
+  .open
+    display: block !important

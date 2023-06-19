@@ -11,3 +11,9 @@ var mySwiper = new Swiper('.swiper', {
     onlyInViewport: false,
   },
 });
+
+  document.querySelector(".burger").addEventListener('click' , function ()  {
+    this.classList.toggle('active');
+    document.querySelector(".header-menu").classList.toggle('open');
+    
+  })

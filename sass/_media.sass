@@ -39,6 +39,48 @@
   .training-wrapper,
   .advantage-wrapper
     max-width: 700px
+  body
+    padding-top: 85px
+  .burger
+    display: flex !important
+  .header
+    &_mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+        background-color: #fff
+    &-wrapper
+      padding: 30px 0
+      position: relative
+    &__logo
+      margin-right: auto
+    &-menu
+      display: none
+      position: fixed
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      width: 100%
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      margin: 0
+      padding-top: 85px
+      &__item
+        max-width: 700px
+        margin: auto
+        margin-bottom: 20px
+      &__link
+        font-size: 22px
+    &__contacts
+      &_mobile
+        display: flex
+        margin: auto
+        max-width: 700px
   .main
     &::before
       content: ''
@@ -146,8 +188,7 @@
       width: 261px
     &-wrapper
     &__card
-      padding: 45px 35px
-
+      padding: 45px 30px
     &__description
       margin-bottom: 15px
     &__button
@@ -195,12 +236,31 @@
   .groups-row
     max-width: 567px
     width: 92%
+  .header
+    &-menu
+      &__item
+        max-width: 567px
+        margin: auto
+        margin-bottom: 22px
+    &__contacts
+      &_mobile
+        display: flex
+        margin: auto
+        max-width: 567px
+
+  .logo
+    width: 132px
+    height: 23px
   .main
     background-image: url(../img/main-photo.jpg)
     background-repeat: no-repeat
     background-size: cover
     background-position: center
     position: relative
+    &::before
+      top: 15px
+    &-offer
+      padding: 60px 0
   .swiper
     &-slide
       &__profile
@@ -213,15 +273,14 @@
       display: flex
       flex-direction: column
     &__block
-      min-width: 100%
+      max-width: 100%
       margin-bottom: 35px
       &__right
-        min-width: 100%
+        max-width: 100%
     &__video
       min-width: 100%
       height: 262px
       &__img
-        height: 120%
   .advantage
     margin-bottom: 60px
     &-wrapper
@@ -236,6 +295,7 @@
       justify-content: space-between
       flex-direction: row
       height: 0%
+
       &::before
         display: none
     &__right
@@ -279,6 +339,7 @@
         margin: 0
       &:hover
         display: none
+
   .teacher
     &-top
       flex-direction: column
@@ -297,7 +358,9 @@
     display: flex
     flex-direction: column-reverse
     background-color: #F7FAFC
-  
+    border-radius: 12px 12px 0 0
+    box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3)
+
     &-wrapper
       position: static
       box-shadow: none
@@ -324,7 +387,7 @@
     &-content
       width: 100%
       margin-bottom: 20px
-      
+
 @media (max-width: 567px)
   .container,
   .header-wrapper,
@@ -332,6 +395,159 @@
   .advantage-wrapper,
   .advantages-mobile
     max-width: 92%
+  .logo
+    width: 111px
+    height: 21px
   .training
     &__block
       width: 100%
+  .header
+    &__contacts
+      &_mobile
+        &_hidden
+          display: none
+    &-menu
+      &__item
+        max-width: 92%
+        margin: auto
+        margin-bottom: 22px
+      &__link
+        font-size: 18px
+    &__contacts
+      &_mobile
+        margin: auto
+        max-width: 92%
+  .burger
+    height: 12px
+  .main
+    &::before
+      top: 10px
+      left: 20px
+      background-image: url(../img/car-mobile.svg)
+      width: 48px
+      height: 38px
+    &__title
+      font-size: 28px
+      margin-bottom: 15px
+    &__subtitle
+      font-size: 16px
+      margin-bottom: 20px
+    &__text
+      font-size: 14px
+      margin-bottom: 30px
+    &__button
+      padding: 16px 28px
+  .training
+    &::after
+      top: 21px
+      right: 50px
+      background-image: url(../img/rocket-mobile.svg)
+      width: 67px
+      height: 34px
+    &-wrapper
+      padding: 0
+    &__title
+      font-size: 22px
+      margin-bottom: 40px
+    &__subtitle
+      font-size: 16px
+      &__mb
+        font-size: 16px
+        max-width: 230px
+    &__video
+      max-width: 290px
+      &__img
+        max-height: 100%
+  .advantage
+    &__block
+    &__left
+      padding: 0
+      flex-direction: column
+      order: -1
+    &__right
+      flex-direction: column
+      order: -1
+      padding: 0
+      margin-top: 0
+    &-img
+      width: 184px
+      height: 210px
+
+  .group
+    background-image: none
+    background-color: #F7FAFC
+    padding: 60px 0
+    margin-bottom: 60px
+    &::before
+      top: 10px
+      left: 13px
+    &-top
+      flex-direction: column
+      margin-bottom: 40px
+    &__title
+      font-size: 22px
+      margin-bottom: 30px
+  .teacher
+    padding: 0
+    margin-bottom: 60px
+    &__title
+      font-size: 22px
+      margin-bottom: 30px
+    &__
+    &__text
+      font-size: 14px
+      max-width: 267px
+  .swiper
+    &-slide
+      margin-bottom: 0
+      &__profile
+        min-width: 100%
+        height: 100%
+        overflow: hidden
+        &:last-child
+          margin-bottom: 0
+      &__avatar
+        min-width: 100%
+        height: 100%
+        border-radius: 12px
+      &__name
+        font-size: 18px
+        margin-bottom: 10px
+      &__country
+        font-size: 14px
+  .banner
+    margin-bottom: 60px
+    &-wrapper
+      padding: 70px 0
+    &__title
+      font-size: 22px
+      max-width: 380px
+      margin-bottom: 30px
+    &__text
+      margin-bottom: 30px
+    &__button
+      padding: 15px 28px
+  .address
+    &-contacts
+      flex-direction: column
+    &__title
+      font-size: 22px
+    &__text
+      font-size: 14px
+    &__description
+      font-size: 16px
+    .map
+      height: 260px
+    iframe
+      height: 260px
+  .footer
+    &-wrapper
+      font-size: 12px
+      padding: 40px 0
+
+@media (max-width: 480px)
+  .header
+    &__contacts
+      display: none
+      &_mobile
+        display: flex
