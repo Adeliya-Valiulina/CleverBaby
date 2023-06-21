@@ -20,7 +20,7 @@ body
 	line-height: 140%
 	border: none
 	max-width: 166px
-	
+
 h1,h2
 	font-family: 'Rubik'
 	margin: 0
@@ -28,3 +28,10 @@ h3
 	margin: 0
 p
 	margin: 0
+
+.element
+	&-animation
+		opacity: 0
+.element-animation.element-show
+	opacity: 1
+	transition: opacity 0.5s
